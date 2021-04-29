@@ -1,0 +1,307 @@
+.body-left {
+    background-color: #ffffff;
+    width: 220px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .body-left .sidebar {
+        height: 50px;
+        display: flex;
+    }
+
+        .body-left .sidebar .toggle {
+            width: 50px;
+            height: 48px;
+            background-image: url('../../content/img/toggle.png');
+            background-repeat: no-repeat;
+            background-size: 24px;
+            background-position: 16px center;
+            cursor: pointer;
+        }
+
+        .body-left .sidebar .logo {
+            width: 138px;
+            height: 50px;
+            background-image: url('../../content/img/cukcuk-logo.png');
+            background-size: 126px;
+            background-repeat: no-repeat;
+            background-position: 0px 9px;
+            cursor: pointer;
+        }
+
+    .body-left .menu {
+        position: relative;
+        flex: 1;
+    }
+
+        .body-left .menu .menu-item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+            .body-left .menu .menu-item:hover {
+                background-color: #E9EBEE;
+            }
+
+            .body-left .menu .menu-item .icon {
+                width: 50px;
+                height: 45px;
+                background-repeat: no-repeat;
+                background-size: 22px;
+                background-position: 18px center;
+            }
+
+                .body-left .menu .menu-item .icon.overview {
+                    background-image: url('../../content/icon/dashboard.png');
+                }
+
+                .body-left .menu .menu-item .icon.report {
+                    background-image: url('../../content/icon/report.png');
+                }
+
+                .body-left .menu .menu-item .icon.dic-employee{
+                    background-image: url('../../content/icon/dic-employee.png');
+                }
+
+                .body-left .menu .menu-item .icon.setting{
+                    background-image: url('../../content/icon/setting.png');
+                }
+
+            .body-left .menu .menu-item .item-name {
+                width: 150px;
+            }
+
+.body-right {
+    position: absolute;
+    left: 221px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: bisque;
+    border-left: 1px solid #bbbbbb;
+}
+
+    .body-right .header {
+        background-color: white;
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+        
+        .body-right .header .header-left{
+            padding: 5px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        
+                /*select custom*/
+                .custom-select {
+                    position: relative;
+                    font-family: Arial;
+                    width: 23%;
+                    display: flex;
+                    flex-direction: column;
+                  }
+                  
+                  .custom-select select {
+                    display: none; /*hide original SELECT element: */
+                  }
+                  
+                  .select-selected {
+                    background-color: white;
+                  }
+                  
+                  /* Style the arrow inside the select element: */
+                  .select-selected:after {
+                    position: absolute;
+                    content: "";
+                    top: 17px;
+                    right: 10px;
+                    border: 6px solid transparent;
+                    border-color: #000000 transparent transparent transparent;
+                  }
+                  /* Point the arrow upwards when the select box is open (active): */
+                  .select-selected.select-arrow-active:after {
+                    border-color: transparent transparent #000000  transparent;
+                    top: 11px;
+                  }
+                  
+                  /* style the items (options), including the selected item: */
+                  .select-items div,.select-selected {
+                    color: #000000;
+                    padding: 12px 0px 12px 36px;
+                    cursor: pointer;
+                  }
+                  
+                  /* Style items (options): */
+                  .select-items {
+                    position: absolute;
+                    background-color: white;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    z-index: 99;
+                  }
+                  
+                  /* Hide the items when the select box is closed: */
+                  .select-hide {
+                    display: none;
+                  }
+                  
+                  .select-items div:hover {
+                    background-color: #E9EBEE;
+                  }
+
+                  .select-items .same-as-selected{
+                      background-color: #019016;
+                  }
+                  
+                /*select custom*/
+
+        .body-right .header .header-right{
+            position: absolute;
+            left: 51%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 51px;
+            
+        }
+            
+            .body-right .header .header-right .account{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                float: right;
+            }
+                .body-right .header .header-right .account .icon{
+                    width: 62px;
+                    height: 50px;
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+                    background-position: 16px center;
+                }
+
+                .body-right .header .header-right .account .icon-option{
+                    width: 48px;
+                    height: 50px;
+                    background-repeat: no-repeat;
+                    background-size: 16px;
+                    background-position: 16px center;
+                }
+
+                .body-right .header .header-right .account .icon.avatar{
+                    background-image: url('../../content/icon/avatar-default.png');
+                }
+
+                .body-right .header .header-right .account .icon-option.option{
+                    background-image: url('../../content/icon/option.png');
+                }
+
+    .body-right .content {
+        background-color: #ffffff;
+        position: absolute;
+        top: 51px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+        .body-right .content .title-add{
+            height: 50px;
+        }
+            
+            .body-right .content .title-add .title{
+                font-size: 20px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+            }
+
+            .body-right .content .title-add .add{
+                position: absolute;
+                left: 50%;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                height: 45px;
+                padding: 10px 16px 10x 0px;
+            }
+
+            .body-right .content .title-add .add .btn{
+                padding: 10px 16px 10px 0px;
+            }
+                .body-right .content .title-add .add button{
+                    float: right;
+                    height: 40px;
+                    background-color: #019016;
+                    border: none;
+                    padding: 0px;
+                    color: #ffffff;
+                    border-radius: 4px;
+                    
+                    text-align: left;
+                }
+
+                .body-right .content .title-add .add .btn button .icon-btn{
+                    padding: 0px 6px 0px 16px;
+                    line-height: 40px;
+                    display: inline-block;
+                    position: relative;
+                    top: 3px;
+                }
+                .body-right .content .title-add .add .btn button .content-btn{
+                    padding-right: 16px;
+                    font-size: 13px;
+                    font-family: Regular;
+                    line-height: 40px;
+                    display: inline-block;
+                    position: relative;
+                }
+
+        .body-right .content .fillter{
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+        }
+
+        .body-right .content .fillter .search{
+            height: 40px;
+            width: 100px;
+        }
+
+        .body-right .content .fillter .search .icon-search{
+            background-image: url('../../content/icon/search.png');
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+            background-position: 16px center;
+            line-height: 40px;
+            padding: 12px 8px 12px 16px;
+        }
+
+        .body-right .content .fillter .search input{
+            height: 34px;
+            border:none;
+            border: 1px solid #bbbbbb ;
+            border-radius: 5px;
+            font-size: 12px;
+            color: #bbbbbb;
+            width: 120px !important;
+            padding: 10px 0px 10px 40px !important;
+            
+        }
+        
+        .body-right .content .fillter .search input:focus{
+            border:none;
+            border: 1px solid #019160;
+            outline: none;
+        }
+                
+               
